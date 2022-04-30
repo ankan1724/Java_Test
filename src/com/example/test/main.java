@@ -2,7 +2,7 @@ package com.example.test;
 
 import java.io.IOException;
 
-public class main {
+public class main { 
     public static void main(String[] args) throws IOException {
         Model m= new Model();
         m.setId(11235813);
