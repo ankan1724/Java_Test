@@ -4,6 +4,7 @@ public class Model {
     public long id;
     public String name;
     public double balance;
+    public int pin;
     public long getId() {
         return id;
     }
@@ -22,22 +23,26 @@ public class Model {
     public void setBalance(double balance) {
         this.balance = balance;
     }
-
-    public Model(long id, String name, double balance) {
+    public int getPin() {
+        return pin;
+    }
+    public void setPin(int pin) {
+        this.pin = pin;
+    }
+    public Model(long id, String name, double balance, int pin) {
         this.id = id;
         this.name = name;
         this.balance = balance;
+        this.pin=pin;
     }
-
     public Model() {
         super();
     }
-
     @Override
     public String toString() {
-        return "Model{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "{" +
+                "Cust_id=" + id +
+                ", Cust_name='" + name + '\'' +
                 ", balance=" + balance +
                 '}';
     }
